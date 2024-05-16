@@ -44,16 +44,16 @@ class _HomeState extends State<Home> {
                           bottom: 20,
                         ),
                         child: Text(
-                          'My To Do List',
+                          'To Do List',
                           style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                       ),
-                      for (ToDo todo in _foundToDo.reversed)
+                      for (ToDo todoo in _foundToDo.reversed)
                         ToDoItem(
-                          todo: todo,
+                          todo: todoo,
                           onToDoChanged: _handleToDoChange,
                           onDeleteItem: _deleteToDoItem,
                         ),
@@ -93,9 +93,8 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       controller: _todoController,
                       decoration: InputDecoration(
-                        hintText: 'Add a new todo item',
-                        border: InputBorder.none,
-                      ),
+                          hintText: 'Add a new todo item',
+                          border: InputBorder.none),
                     ),
                   ),
                 ),
@@ -120,7 +119,7 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
