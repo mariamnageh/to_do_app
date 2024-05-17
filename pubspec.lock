@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  instabug_flutter:
+    dependency: "direct dev"
+    description:
+      name: instabug_flutter
+      sha256: "339dde0e6867b04db2e4211bd0680ece2c246a82b7e6f1209969df5783cc523a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "13.0.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -210,3 +218,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.4 <4.0.0"
+  flutter: ">=1.17.0"
